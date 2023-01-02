@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+.mainContainer {
+  padding: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homeContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homeWrapper {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bordered {
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  padding: 1rem;
+
+}
+
+.info {
+  display: grid;
+  gap: 1rem;
+}
+
+.summary {
+  display: grid;
+  gap: 1rem
+}
+
+.flexLine {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.flexLine:hover {
+  background-color: #f0f0f0;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  color: blue;
+}
+
+.list {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  gap: 0.5rem;
+
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.orderBtn {
   color: white;
+  background-color: green;
+  border: none;
+  width: 100%;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.orderBtn:disabled {
+  background-color: dimgrey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.smallText {
+  font-size: 0.7rem;
 }
+
+.countBtn {
+  border: none;
+  border-radius: 50%;
+}
+
+.okImage {
+  display: flex;
+  align-items: center;
+}
+
+.creditCardItemContainer {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.creditCardsDetails {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.plus {
+  color: blue;
+  font-size: 3rem;
+}
+
+
